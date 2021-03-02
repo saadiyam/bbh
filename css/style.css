@@ -8,6 +8,26 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 body {
   color: #666666;
   font-size: 14px;
@@ -176,29 +196,6 @@ nav.main-menu {
   text-transform: uppercase;
   color: #fff;
   line-height: 40px;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.5, 1.5);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(1, 1);
-  }
-  to {
-    transform: scale(1.5, 1.5);
-  }
-}
-
-.carousel-inner .item > img {
-  -webkit-animation: zoom 20s;
-  animation: zoom 20s;
 }
 
 .carousel-inner .item > img {
